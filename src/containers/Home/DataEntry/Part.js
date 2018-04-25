@@ -28,9 +28,9 @@ export default class extends Component {
 
 		return (
 			<div>
-        <RaisedButton className='w-25' label='Order' onClick={this.handleOpen} />
+        <RaisedButton className='w-25' label='Part' onClick={this.handleOpen} />
         <Dialog
-          title='Order'
+          title='Part'
           actions={actions}
           modal={false}
           open={this.state.open}
