@@ -9,7 +9,7 @@ import Supplier from './DataEntry/Supplier.js'
 export default class extends Component {	
 	render() {
 		return (
-			<div className='flex flex-column pa3'>
+			<div className='pa3 justify-between vh-50 flex flex-column'>
 				<Customer />
 				<Order />
 				<Job />
