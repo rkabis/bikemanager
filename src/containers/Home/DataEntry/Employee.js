@@ -10,10 +10,19 @@ export default class extends Component {
 	constructor() {
 		super()
 		this.state = {
-			open: false
+			open: false,
+			nameValue: ''
 		}
 		this.handleOpen = () => {this.setState({open: true})}
-		this.handleClose = () => {this.setState({open: false})}
+		this.handleClose = () => {
+			this.setState({open: false})
+			alert(this.state.nameValue)
+		}
+		this.handleChange = (event) => {
+			this.setState({
+				nameValue: event.target.value
+			})
+		}
 	}
 
 	render() {
@@ -28,9 +37,9 @@ export default class extends Component {
 
 		return (
 			<div>
-        <RaisedButton className='w-25' label='Order' onClick={this.handleOpen} />
+        <RaisedButton className='w-25' label='Employee' onClick={this.handleOpen} />
         <Dialog
-          title='Order'
+          title='Employee'
           actions={actions}
           modal={false}
           open={this.state.open}
@@ -38,11 +47,11 @@ export default class extends Component {
         >
 	        <div className='flex flex-column'>
 	          <DatePicker hintText='Enter Date' />
-	          <TextField floatingLabelText='Order Number' />
-	          <TextField floatingLabelText='Part Number' />
-	          <TextField floatingLabelText='Supplier Number' />
-	          <TextField floatingLabelText='Quantity' />
-	          <TextField floatingLabelText='Price' />
+	          <TextField floatingLabelText='Employee Number' />
+	          <TextField floatingLabelText='Employee Name' />
+	          <TextField floatingLabelText='Contact Number' />
+	          <DatePicker hintText='Completion Date' />
+	          <TextField floatingLabelText='Rate' />
 	        </div>
         </Dialog>
 			</div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Customer from './DataEntry/Customer.js'
+import Employee from './DataEntry/Employee.js'
 import Order from './DataEntry/Order.js'
 import Job from './DataEntry/Job.js'
 import Part from './DataEntry/Part.js'
@@ -11,6 +12,7 @@ export default class extends Component {
 		return (
 			<div className='pa3 justify-between vh-50 flex flex-column'>
 				<Customer />
+				<Employee />
 				<Order />
 				<Job />
 				<Part />

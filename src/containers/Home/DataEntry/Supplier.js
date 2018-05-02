@@ -38,8 +38,9 @@ export default class extends Component {
         >
 	        <div className='flex flex-column'>
 	          <DatePicker hintText='Enter Date' />
-	          <TextField hintText='Ryan Abis' floatingLabelText='Enter Name' />
-	          <TextField hintText='0917 524 7926' floatingLabelText='Enter Number' />
+	          <TextField floatingLabelText='Supplier Number' />
+	          <TextField floatingLabelText='Supplier Name' />
+	          <TextField floatingLabelText='Contact Number' />
 	        </div>
         </Dialog>
 			</div>
